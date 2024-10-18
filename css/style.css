@@ -1,0 +1,53 @@
+/*############ Reset ############*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*############ header ############*/
+header{
+    background-color: rgb(173, 247, 204);
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    filter: drop-shadow(rgba(0, 0, 0, 0.404) 0.25em 0.25em 0.25em);
+}
+nav{
+    
+    
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2em;
+    width: 30em;
+}
+
+nav ul li{
+    text-align: center;
+    width: 10em;
+    padding: 2em;
+}
+nav li:hover{
+    font-size: larger;
+    background-color: rgba(75, 253, 215, 0.527);
+}
+
+/*############ main ############*/
+
+main{
+    /* z-index: -999; */
+    height: 70vh;
+    background-color: rgb(247, 250, 238)
+}
+
+/*############ footer ############*/
+
+footer{
+    height: 4em;
+    background-color: rgb(173, 247, 204);
+}
