@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <header>
@@ -18,34 +20,39 @@
     </header>
 
     <main>
-      <aside>
-        <!-- Contenido de aside bar -->
-      </aside>
-      <section>
-        <!-- Contenido section-->
-        <h1>Contactanos</h1>
-        <p>
-          Completa el siguiente formulario para ponerte en contacto con
-          nosotros.
-        </p>
-
-        <fieldset>
-          <form action="https://formspree.io/f/mbljjvpj" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="Nombre" /> 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" /> 
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" cols="50" rows="4"></textarea>
-            
-            <input type="submit" />
-          </form>
-        </fieldset>
-      </section>
+      <div class="contenido">
+        <aside>
+          <!-- Contenido de aside bar -->
+        </aside>
+        <section>
+          <!-- Contenido section-->
+          <h1>Contactanos</h1>
+          <p>
+            Completa el siguiente formulario para ponerte en contacto con
+            nosotros.
+          </p>
+  
+          <fieldset>
+            <form action="https://formspree.io/f/mbljjvpj" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="Nombre" /> 
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" /> 
+              <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" id="mensaje" cols="50" rows="4"></textarea>
+              
+              <input type="submit" class="boton"/>
+            </form>
+          </fieldset>
+        </section>
+      </div>
+      
     </main>
 
     <footer>
       <!-- Contenido footer-->
+      <i class="fa-brands fa-facebook"></i>
+      
     </footer>
   </body>
 </html>
