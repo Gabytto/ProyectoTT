@@ -10,6 +10,7 @@
   </head>
   <body>
     <header>
+      <div class="logo_header"><img src="../img/Logo_marca.png" alt="Logo de la marca"></div>
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -38,6 +39,12 @@
               <input type="text" name="Nombre" /> 
               <label for="email">E-mail:</label>
               <input type="email" name="email" id="email" /> 
+              <label for="motivo">Motivo del mensaje:</label>
+              <select name="motivo" id="motivo">
+              <option value="">Elige una opción</option>
+              <option value="bug">Reportar un bug</option>
+              <option value="problema">Tengo un problema</option>
+              <option value="reporte-usuario">Reportar una publicación</option></select>
               <label for="mensaje">Mensaje:</label>
               <textarea name="mensaje" id="mensaje" cols="50" rows="4"></textarea>
               

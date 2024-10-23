@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*############ Reset ############*/
+/*############>>> RESET <<<############*/
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +15,18 @@ body {
   font-size: 1.65rem;
 }
 
-/*############ header ############*/
+/*############>>> HEADER <<<############*/
 header {
   z-index: 1;
   background-color: rgb(255, 150, 20);
   height: 8em;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   box-shadow: 3px 3px 8px #817272;  
+}
+.logo_header{
+  margin-left: 5em;
 }
 
 nav ul {
@@ -37,12 +40,13 @@ nav ul {
 nav a:hover {
   transform: scale(1.25);
   background-color: orange;
+  font-weight: bold;
 }
 
 nav a:focus {
     transform: scale(1.25);
     background-color: orangered;
-    color: black;
+    color: white;
     font-weight: bold;
   }
 
@@ -55,25 +59,43 @@ a {
   border-radius: 25%;
  }
 
-/*############ main ############*/
+/*############>>> MAIN <<<############*/
 
 main {
   display: flex;
   justify-content: center;
 }
+
 .contenido {
-  z-index: ;
   width: 90vw;
   background-color: #EDEDED;
   min-height: 80vh;
   margin: 1em;
 }
-h1,
+h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+h2, h3,
 p {
   margin: 2em;
   display: flex;
   justify-content: center;
 }
+.titulo-index{
+  padding: 2em 2em 0.5em 2em;
+  height: 70vh;
+  background-image: url(../img/index-compra-moto.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: orangered;
+  font-weight: bolder;
+  font-size: 2.5em;
+  text-align: center;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -137,7 +159,7 @@ fieldset{
       color: black;
       font-weight: bold;
     }
-/*############ footer ############*/
+/*############>>> footer <<<############*/
 
 footer {
   height: 4em;
