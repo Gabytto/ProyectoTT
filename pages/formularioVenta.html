@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de venta</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo_header"><img src="../img/Logo_marca.png" alt="Logo de la marca"></div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./formularioVenta.html">Publicá</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="contenido">
+
+        <section>
+        <h2>Publicá tú moto</h2>
+        <p>Completa el formulario con los datos de tu moto, luego de ser revisada por nuestros moderadores podrás encontrarla en la sección de Productos.</p>
+        <fieldset>
+          <form action="https://formspree.io/f/mbljjvpj" method="post">
+          <label for="titulo">Titulo de la publicación:</label>
+          <input type="text" maxlength="30" name="titulo">
+          <label for="imagen">Imágen:</label>
+          <input type="file" name="imagen" id="imagen">
+          <label for="cilindrada">Cilindrada:</label>
+          <input type="text" maxlength="6" name="cilindrada">
+          <label for="año">Modelo/año:</label>
+          <input type="text" name="año">
+          <label for="km">Kilometraje:</label>
+          <input type="text" name="km">
+          <label for="precio">Precio:</label>
+          <input type="text" name="precio">
+          
+          <label for="email">E-mail</label>
+          <input type="email" name="email">
+          <button type="submit" class="boton">Enviar</button>
+          </form>
+        </fieldset>
+        </section>
+      </div>
+      
+    </main>
+
+    
+    <footer>
+        <!-- Contenido footer-->
+        <i class="fa-brands fa-facebook"></i>
+        
+    </footer>
+</body>
+</html>

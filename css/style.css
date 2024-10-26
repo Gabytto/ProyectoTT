@@ -22,15 +22,15 @@ header {
   height: 8em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 3px 3px 8px #817272;  
 }
-.logo_header{
-  margin-left: 5em;
+p{
+  text-align: center;
 }
 
 nav ul {
-  display: flex;
+  display:inline-flex;
   list-style: none;
   align-items: center;
   gap: 2em;
@@ -128,8 +128,9 @@ form {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: solid 1px black; 
+  border: solid 1px black;
   font-weight: bold;
+  border-radius: 20%;
 }
 
 .tarjeta-index:hover{
