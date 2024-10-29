@@ -213,4 +213,8 @@ footer {
   nav{
     display: none;
   } 
+  img {
+    width: auto;
+    height: 180px;
+  }
 }
