@@ -20,31 +20,32 @@
     </header>
     <main>
       <div class="contenido">
+          <h2>Publicá tú moto</h2>
 
-        <section>
-        <h2>Publicá tú moto</h2>
-        <p>Completa el formulario con los datos de tu moto, luego de ser revisada por nuestros moderadores podrás encontrarla en la sección de Productos.</p>
-        <fieldset>
-          <form action="https://formspree.io/f/mbljjvpj" method="post">
-          <label for="titulo">Titulo de la publicación:</label>
-          <input type="text" maxlength="30" name="titulo">
-          <label for="imagen">Imágen:</label>
-          <input type="file" name="imagen" id="imagen">
-          <label for="cilindrada">Cilindrada:</label>
-          <input type="text" maxlength="6" name="cilindrada">
-          <label for="año">Modelo/año:</label>
-          <input type="text" name="año">
-          <label for="km">Kilometraje:</label>
-          <input type="text" name="km">
-          <label for="precio">Precio:</label>
-          <input type="text" name="precio">
-          
-          <label for="email">E-mail</label>
-          <input type="email" name="email">
-          <button type="submit" class="boton">Enviar</button>
-          </form>
-        </fieldset>
-        </section>
+          <p>Completa el formulario con los datos de tu moto, luego de ser revisada por nuestros moderadores podrás encontrarla en la sección de Productos.
+          </p>
+
+          <fieldset>
+            <form action="https://formspree.io/f/mbljjvpj" method="post">
+            <label for="titulo">Titulo de la publicación:</label>
+            <input type="text" maxlength="30" name="titulo">
+            <label type="file" for="imagen" id="imagen">Agregá fotos:</label>
+            <input type="file" name="imagen" id="imagen" style="display: none;">
+            <label for="cilindrada">Cilindrada:</label>
+            <input type="text" maxlength="6" name="cilindrada">
+            <label for="año">Modelo/año:</label>
+            <input type="text" name="año">
+            <label for="km">Kilometraje:</label>
+            <input type="text" name="km">
+            <label for="precio">Precio:</label>
+            <input type="text" name="precio">
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email">
+            <button type="submit" class="boton">Enviar</button>
+            </form>
+          </fieldset>
+       
       </div>
       
     </main>
