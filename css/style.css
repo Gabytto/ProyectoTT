@@ -107,6 +107,9 @@ form {
   gap: 0.5em;
   padding: 2em;
 }
+#image{
+  display: none;
+}
 
 .tarjetas {
   display: flex;
