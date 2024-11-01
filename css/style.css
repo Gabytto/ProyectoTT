@@ -22,15 +22,20 @@ header {
   height: 8em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 3px 3px 8px #817272;  
 }
+.logo-header{
+  margin: 0rem 4rem;
+}
+
 p{
   text-align: center;
 }
 
 nav ul {
   display:inline-flex;
+  justify-content: center;
   list-style: none;
   align-items: center;
   gap: 2em;
@@ -213,6 +218,9 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
   nav{
     display: none;
   } 
