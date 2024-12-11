@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header class="header-carrito">
+        <h1>Carrito de compras</h1>
+    </header>
+    <div class="contenido-carrito">
+        <div class="productos">
+            <div class="producto">
+                <span>Moto#1 - USD 6100</span>
+                <span>Stock: <span id="stock-moto#1">1</span></span>
+            </div>
+            <div class="producto">
+                <span>Moto#2 - USD 3500</span>
+                <span>Stock: <span id="stock-moto#2">1</span></span>
+            </div>
+            <div class="producto">
+                <span>Moto#3 - USD 3500</span>
+                <span>Stock: <span id="stock-moto#3">1</span></span>
+            </div>
+        </div>
+        <div class="checkout-modal">
+            <div class="checkout-content">
+                <p>Subtotal: $ <span id="modal-subtotal">0</span></p>
+                <p>Descuento: $ <span id="modal-descuento">0</span></p>
+                <p>IVA: $ <span id="modal-iva">0</span></p>
+                <p>TOTAL A PAGAR: $ <span id="modal-total">0</span></p>
+            </div>
+        </div>
+        <div class="botonera-modal">
+            <button class="btn-verde" onclick="realizarCompra()">PAGAR</button>
+            <button class="btn-rojo" onclick="cerrarCheckout()"><a href="../pages/productos.html">CANCELAR</a></button>
+        </div> 
+    </div>
+    <footer>
+        <!-- falta agregar -->
+    </footer>
+    
+    <script src="../js/app.js"></script>
+</body>
+</html>

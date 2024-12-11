@@ -22,7 +22,7 @@ header {
   height: 8em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 3px 3px 8px #817272;  
 }
 .logo-header{
@@ -209,6 +209,89 @@ fieldset{
   color: black;
   font-weight: bold;
 }
+
+/*>>>>>>>>> CARRITO <<<<<<<<<<<*/
+
+.header-carrito{
+  display: flex;
+  justify-content: center;
+}
+.contenido-carrito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productos{
+  margin-top: 2rem;
+  width: 65%;
+}
+.producto{
+  background-color: rgba(255, 136, 0, 0.096);
+  border: 1px, dashed, rgba(255, 81, 0, 0.24);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.checkout-modal{
+  background-color: rgba(255, 136, 0, 0.096);
+  border: 1px, dashed, rgba(255, 81, 0, 0.24);
+  padding: 15px;
+  width: 65%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.checkout-content{
+  
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.checkout-content > p {
+  margin: 1rem;
+}
+
+
+.botonera-modal{
+  padding: 15px;
+  width: 65%;  
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-verde{
+  border: 1px, solid, gray;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: seagreen;
+  width: 10rem;
+}
+.btn-rojo{
+  border: 1px, solid, gray;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color:crimson;
+  width: 10rem;
+  list-style: none;
+}
+.btn-rojo a{
+  text-decoration: none;
+  color: black;
+}
+.btn-rojo:hover{
+  background-color:rgba(220, 20, 60, 0.815);
+  scale: 1.1;
+}
+.btn-verde:hover{
+  background-color: rgba(46, 139, 86, 0.795);
+  scale: 1.1;
+}
+
 /*############>>> footer <<<############*/
 
 footer {
