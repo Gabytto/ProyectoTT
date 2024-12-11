@@ -49,11 +49,11 @@ nav a:hover {
 }
 
 nav a:focus {
-    transform: scale(1.25);
-    background-color: orangered;
-    color: white;
-    font-weight: bold;
-  }
+  transform: scale(1.25);
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+}
 
 nav a {
   display: flex;
@@ -62,7 +62,7 @@ nav a {
   text-decoration: none;
   color: black;
   border-radius: 25%;
- }
+}
 
 /*############>>> MAIN <<<############*/
 
@@ -263,21 +263,24 @@ fieldset{
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 .btn-verde{
   border: 1px, solid, gray;
   border-radius: 15px;
   padding: 1rem;
   background-color: seagreen;
-  width: 10rem;
+  width: 20rem;
+  font-size: larger;
 }
 .btn-rojo{
   border: 1px, solid, gray;
   border-radius: 15px;
   padding: 1rem;
   background-color:crimson;
-  width: 10rem;
+  width: 20rem;
   list-style: none;
+  font-size: larger;
 }
 .btn-rojo a{
   text-decoration: none;
