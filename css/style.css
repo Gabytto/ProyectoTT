@@ -292,6 +292,10 @@ fieldset{
   background-color: rgba(46, 139, 86, 0.795);
   scale: 1.1;
 }
+.bolder{
+  font-weight: bolder;
+  font-size: 2rem;
+}
 
 /*############>>> footer <<<############*/
 
