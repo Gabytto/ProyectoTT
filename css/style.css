@@ -252,6 +252,8 @@ fieldset{
 }
 .checkout-content > p {
   margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -295,6 +297,9 @@ fieldset{
 .bolder{
   font-weight: bolder;
   font-size: 2rem;
+}
+.bold{
+  font-weight: bold;
 }
 
 /*############>>> footer <<<############*/
