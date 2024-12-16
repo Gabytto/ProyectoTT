@@ -42,15 +42,47 @@ window.onload = function() {
         }else{
             alert('algunos de los valores no es un numero')
         }
-        
-         
     }
+
+    function calcularDescuento() {
+        const montoSubtotal = parseInt(document.getElementById('modal-subtotal').textContent)
+        const descuento = montoSubtotal * 0.1
+        document.getElementById('modal-descuento').textContent = descuento
+        console.log(descuento)
+    }
+
+    function calcularNg() {
+        const subtotal = parseInt(document.getElementById('modal-subtotal').textContent)
+        const descuento = parseInt(document.getElementById('modal-descuento').textContent)
+        const aplicarDescuento = subtotal - descuento
+        document.getElementById('modal-ng').textContent = aplicarDescuento
+        console.log(descuento)  
+    }
+
+    function calcularIva(){ 
+        let iva = parseInt(document.getElementById('modal-ng').textContent)
+        iva = iva * 0.21
+        document.getElementById('modal-iva').textContent = iva
+    }
+
+    function totalAPagar(){
+        let a = parseInt(document.getElementById('modal-ng').textContent)
+        let b = parseInt(document.getElementById('modal-iva').textContent)
+        let total = a + b
+        document.getElementById('modal-total').innerHTML = total
+    } 
+
+
     document.addEventListener('DOMContentLoaded', calcularSubtotal);
     const botones = document.querySelectorAll('.btn-masmenos');
     botones.forEach(boton => {
         boton.addEventListener('click', calcularSubtotal);
+        boton.addEventListener('click', calcularDescuento);
+        boton.addEventListener('click', calcularNg)
+        boton.addEventListener('click', calcularIva)
+        boton.addEventListener('click', totalAPagar)
     });
-    
+       
 };
 
 
@@ -58,30 +90,6 @@ function realizarCompra(){
     confirm('Compra realizada exitosamente!')
 }
 
-function descuento() {
-    let a = parseInt(document.getElementById('modal-subtotal').textContent)
-    a = a * 0.1
-    document.getElementById('modal-descuento').innerHTML = '-' + a
-}
-function ng() {
-    let a = parseInt(document.getElementById('modal-subtotal').textContent)
-    let b = parseInt(document.getElementById('modal-descuento').textContent)
-    let suma = a+b
-    document.getElementById('modal-ng').innerText = suma  
-}
-function iva(){ 
-    let iva = parseInt(document.getElementById('modal-ng').textContent)
-    iva = iva * 0.21
-    document.getElementById('modal-iva').innerHTML = iva
-}
-function totalAPagar(){
-    let a = parseInt(document.getElementById('modal-ng').textContent)
-    let b = parseInt(document.getElementById('modal-iva').textContent)
-    let total = a + b
-    document.getElementById('modal-total').innerHTML = total
-}
 
-descuento()
-ng()
-iva()
-totalAPagar()
+
+
