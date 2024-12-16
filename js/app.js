@@ -47,7 +47,7 @@ window.onload = function() {
     function calcularDescuento() {
         const montoSubtotal = parseInt(document.getElementById('modal-subtotal').textContent)
         const descuento = montoSubtotal * 0.1
-        document.getElementById('modal-descuento').textContent = descuento
+        document.getElementById('modal-descuento').textContent = descuento.toFixed(2)
         console.log(descuento)
     }
 
@@ -55,21 +55,21 @@ window.onload = function() {
         const subtotal = parseInt(document.getElementById('modal-subtotal').textContent)
         const descuento = parseInt(document.getElementById('modal-descuento').textContent)
         const aplicarDescuento = subtotal - descuento
-        document.getElementById('modal-ng').textContent = aplicarDescuento
+        document.getElementById('modal-ng').textContent = aplicarDescuento.toFixed(2)
         console.log(descuento)  
     }
 
     function calcularIva(){ 
         let iva = parseInt(document.getElementById('modal-ng').textContent)
         iva = iva * 0.21
-        document.getElementById('modal-iva').textContent = iva
+        document.getElementById('modal-iva').textContent = iva.toFixed(2)
     }
 
     function totalAPagar(){
         let a = parseInt(document.getElementById('modal-ng').textContent)
         let b = parseInt(document.getElementById('modal-iva').textContent)
         let total = a + b
-        document.getElementById('modal-total').innerHTML = total
+        document.getElementById('modal-total').innerHTML = total.toFixed(2)
     } 
 
 
