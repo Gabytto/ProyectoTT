@@ -9,7 +9,7 @@ window.onload = function() {
         });
     });
 
-    function actualizarCantidad(productoId, operacion) {
+    function actualizarCantidad(productoId, operacion) { 
       const cantidadElement = document.getElementById(`cantidad-${productoId}`);
       let cantidad = parseInt(cantidadElement.textContent);
       const stockMaximo = parseInt(document.getElementById(`stock-${productoId}`).textContent)
@@ -25,25 +25,39 @@ window.onload = function() {
       }
       cantidadElement.textContent = cantidad;
     }
-    document.getElementById('masmenos-mas').onclick = function() {
-      actualizarCantidad('incrementar');
-    };
-    document.getElementById('masmenos-menos').onclick = function() {
-      actualizarCantidad('decrementar');
-    }; 
+   
+    function calcularSubtotal() {
+        const cantidadMoto = parseInt(document.getElementById('cantidad-moto').textContent)
+        const cantidadLinga = parseInt(document.getElementById('cantidad-linga').textContent)
+        const cantidadCasco = parseInt(document.getElementById('cantidad-casco').textContent)
+        const precioMoto = parseInt(document.getElementById('precio-moto').textContent)
+        const precioLinga = parseInt(document.getElementById('precio-linga').textContent)
+        const precioCasco = parseInt(document.getElementById('precio-casco').textContent)
+        if(!isNaN(cantidadMoto) && !isNaN(cantidadLinga) && !isNaN(cantidadCasco)){
+            montoCasco = cantidadCasco*precioCasco
+            montoLinga = cantidadLinga*precioLinga
+            montoMoto = cantidadMoto*precioMoto
+            const subtotal = montoMoto + montoLinga + montoCasco
+            document.getElementById('modal-subtotal').textContent = subtotal 
+        }else{
+            alert('algunos de los valores no es un numero')
+        }
+        
+         
+    }
+    document.addEventListener('DOMContentLoaded', calcularSubtotal);
+    const botones = document.querySelectorAll('.btn-masmenos');
+    botones.forEach(boton => {
+        boton.addEventListener('click', calcularSubtotal);
+    });
+    
 };
+
 
 function realizarCompra(){
     confirm('Compra realizada exitosamente!')
 }
-function subtotal() {
-    let a = parseInt(document.getElementById('cantidad-moto').textContent)
-    let b = parseInt(document.getElementById('cantidad-linga').textContent)
-    let c = parseInt(document.getElementById('cantidad-casco').textContent)
-    console.log(a)
-    let suma = a+b+c
-    document.getElementById('modal-subtotal').innerText = suma  
-}
+
 function descuento() {
     let a = parseInt(document.getElementById('modal-subtotal').textContent)
     a = a * 0.1
@@ -64,10 +78,9 @@ function totalAPagar(){
     let a = parseInt(document.getElementById('modal-ng').textContent)
     let b = parseInt(document.getElementById('modal-iva').textContent)
     let total = a + b
-    console.log(a)
     document.getElementById('modal-total').innerHTML = total
 }
-subtotal()
+
 descuento()
 ng()
 iva()
