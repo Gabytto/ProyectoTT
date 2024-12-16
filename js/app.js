@@ -38,7 +38,7 @@ window.onload = function() {
             montoLinga = cantidadLinga*precioLinga
             montoMoto = cantidadMoto*precioMoto
             const subtotal = montoMoto + montoLinga + montoCasco
-            document.getElementById('modal-subtotal').textContent = subtotal 
+            document.getElementById('modal-subtotal').textContent = subtotal.toFixed(2) 
         }else{
             alert('algunos de los valores no es un numero')
         }
@@ -66,8 +66,8 @@ window.onload = function() {
     }
 
     function totalAPagar(){
-        let a = parseInt(document.getElementById('modal-ng').textContent)
-        let b = parseInt(document.getElementById('modal-iva').textContent)
+        let a = parseFloat(document.getElementById('modal-ng').textContent)
+        let b = parseFloat(document.getElementById('modal-iva').textContent)
         let total = a + b
         document.getElementById('modal-total').innerHTML = total.toFixed(2)
     } 
